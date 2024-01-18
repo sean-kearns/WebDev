@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            /*can specify multiple objects with one css */
+            td, th {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            #small_heading {
+                color: orange;
+            }
+
+            .example_class {
+                color:purple
+            }
+            /*only list elements that are children of ordered lists*/
+            ol > li {
+                color:green;
+            }
+
+            /*for links */
+            a[href = "google.com"]{
+                color: magenta;
+            }
+
+            /*button stying */
+            button {
+                width: 200px;
+                height: 50px;
+                font-size: 24px;
+                background-color: green;
+            }
+            button:hover {
+                background-color: orange;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my Website</h1>
+        <h2 id = 'small_heading'>This is a smaller heading</h2>
+        <h6>Smallest heading</h6>
+
+        <br/>
+        <!-- The strong and i tags give us bold and italics respectively. -->
+        A <strong>bold</strong> word and an <i>italicized</i> word!
+        
+        <br/>
+        <!-- We can link to another page (such as cs50's page) using a. which is short for anchor -->
+        View my LinkedIn Page <a href="https://www.linkedin.com/in/sean-kearns-2b3599172/">Here!</a>!
+
+        <br/>
+        <!-- We can link to another page within our website -->
+        View the <a href="hello.html">Hello World Page</a>!
+
+        <br/>
+        <!-- We can link to another page within our website -->
+        View the <a href="tutorial.html">Tutorial Page</a>!
+
+        <br/>
+        <!-- We can link to another page within our website -->
+        View the <a href="style.html">Style Page</a>!
+
+        <br/><br/>
+        <!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
+        An unordered list:
+        <ul>
+            <li class="example_class">foo</li>
+            <li>bar</li>
+            <li class="example_class">baz</li>
+        </ul>
+        An ordered list:
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ol>
+
+        Websites:
+        <ol>
+            <li><a href="google.com">google</a></li>
+            <li><a href="facebook.com">facebook</a></li>
+            <li><a href="amazon.com">amazon</a></li>
+        </ol>
+
+        <!-- Images require a src attribute, which can be either the path to a file on your computer or the link to an image online. It also includes an alt attribute, which gives a description in case the image can't be loaded. -->
+        My Headshot:
+        <br>
+        <img src="images/fake_headshot.jpg" alt="My Fake Headshot" width="200" height="200">
+        <!-- We can also see above that for some elements that don't contain other ones, closing tags are not necessary. -->
+
+        <!-- Here, we use a br tag to add white space to the page. -->
+        <br/> <br/>
+
+        <!-- A few different tags are necessary to create a table. -->
+        <table>
+            <thead>
+                <th>Ocean</th>
+                <th>Average Depth</th>
+                <th>Maximum Depth</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacific</td>
+                    <td>4280 m</td>
+                    <td>10911 m</td>
+                </tr>
+                <tr>
+                    <td>Atlantic</td>
+                    <td>3646 m</td>
+                    <td>8486 m</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- working with buttons and hovering-->
+        <button>Click Me!</button>
+
+    </body>
+<html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tutorial</title>
+    </head>
+    <body>
+        <h1>This is a big heading</h1>
+        <h2>This is a smaller heading</h2>
+        <h6>Smallest heading</h6>
+
+        <br/>
+        <!-- The strong and i tags give us bold and italics respectively. -->
+        A <strong>bold</strong> word and an <i>italicized</i> word!
+        
+        <br/>
+        <!-- We can link to another page (such as cs50's page) using a. which is short for anchor -->
+        View my LinkedIn Page <a href="https://www.linkedin.com/in/sean-kearns-2b3599172/">Here!</a>!
+
+        <br/>
+        <!-- We can link to another page within our website -->
+        View the <a href="hello.html">Hello World Page</a>!
+
+        <br/>
+        <!-- We can link to another page within our website -->
+        Back to the <a href="homepage.html">Homepage</a>!
+
+        <br/><br/>
+        <!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
+        An unordered list:
+        <ul>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ul>
+        An ordered list:
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ol>
+
+        <!-- Images require a src attribute, which can be either the path to a file on your computer or the link to an image online. It also includes an alt attribute, which gives a description in case the image can't be loaded. -->
+        My Headshot:
+        <br>
+        <img src="images/fake_headshot.jpg" alt="My Fake Headshot" width="200" height="200">
+        <!-- We can also see above that for some elements that don't contain other ones, closing tags are not necessary. -->
+
+        <!-- Here, we use a br tag to add white space to the page. -->
+        <br/> <br/>
+
+        <!-- A few different tags are necessary to create a table. -->
+        <table>
+            <thead>
+                <th>Ocean</th>
+                <th>Average Depth</th>
+                <th>Maximum Depth</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacific</td>
+                    <td>4280 m</td>
+                    <td>10911 m</td>
+                </tr>
+                <tr>
+                    <td>Atlantic</td>
+                    <td>3646 m</td>
+                    <td>8486 m</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <!-- type of input, placeholder of the text, name of the form-->
+            <input type = 'text' placeholder="Full Name" name="name">
+        </form>
+
+        <br/> <br/>
+        <h1> Submit a form here!</h1>
+        <form>
+            <!-- type of input, placeholder of the text, name of the form-->
+            <input type="text" placeholder="First Name" name="first">
+            <!-- passwrod makes the dots appear instead of text -->
+            <input type="password" placeholder="Password" name="password">
+            <!-- radio inputs-->
+            <div>
+                Favorite Color:
+                <input name="color" type="radio" value="blue"> Blue
+                <input name="color" type="radio" value="green"> Green
+                <input name="color" type="radio" value="yellow"> Yellow
+                <input name="color" type="radio" value="red"> Red
+            </div>
+
+            <div>
+                <input name = 'country' list = 'countries' placeholder = 'Country'>
+                <datalist id = 'countries'>
+                    <option value="America">
+                    <option value="Canada">
+                </datalist>
+            </div>
+            <input type="submit">
+        </form>
+
+
+    </body>
+<html>
