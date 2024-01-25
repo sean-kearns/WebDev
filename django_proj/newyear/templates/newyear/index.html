@@ -1,0 +1,21 @@
+{% load static %} <!--loading static files from the folder -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it new year's?</title>
+        <link href="{% static 'newyear/styles.css' %}" rel="stylesheet"> <!-- loading this file as a variable will allow django to find the file later on based on where static files are located-->
+    </head>
+    <body>
+        <!--using logic here also -->
+        {% if newyear %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+        
+        <br/>
+        <!-- We can link to another page within our website -->
+        Back to the <a href="homepage.html">Homepage</a>!
+    </body>
+<html>

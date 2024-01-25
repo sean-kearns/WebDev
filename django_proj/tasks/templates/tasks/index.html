@@ -1,0 +1,15 @@
+{% extends "tasks/layout.html" %}
+<!-- instead of including all of the html, this fills the block on the layout page -->
+
+{% block body %}
+    <h1>Tasks</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% empty %}
+            <li>You have no tasks.</li>
+        {% endfor %}
+    </ul>
+    <!-- use the name of the routes that we made from url.py file that we created  -->
+    <a href="{% url 'tasks:add' %}">Add a new task.</a>
+{% endblock %}
